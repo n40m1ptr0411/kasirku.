@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang Belanja - Kasirku</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo">Kasirku.</a>
+      <div class="navbar-nav">
+        <div class="category-menu">
+          <a href="index.html#electronic">Electronic</a>
+          <a href="index.html#life-style">Life Style</a>
+          <a href="index.html#home-supplies">Home Supplies</a>
+          <a href="index.html#health">Health</a>
+        </div>
+      </div>
+      <div class="navbar-extra">
+        <a href="index.html" aria-label="Kembali ke katalog">
+          <i data-feather="arrow-left"></i>
+        </a>
+        <a href="cart.html" id="shopping-cart" aria-label="Keranjang belanja">
+          <i data-feather="shopping-cart"></i>
+          <span id="cart-count">0</span>
+        </a>
+        <a
+          href="#"
+          id="hamburger-menu"
+          aria-label="Buka menu kategori"
+          aria-expanded="false"
+        >
+          <i data-feather="menu"></i>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="cart" class="cart-section">
+        <h2>Keranjang Belanja</h2>
+        <div class="cart-layout">
+          <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Keranjang masih kosong.</p>
+          </div>
+          <aside class="cart-summary">
+            <h3>Ringkasan Belanja</h3>
+            <div class="summary-row">
+              <span>Jumlah barang</span>
+              <strong id="cart-total-quantity">0</strong>
+            </div>
+            <div class="summary-row total-row">
+              <span>Total harga</span>
+              <strong id="cart-total-price">Rp0</strong>
+            </div>
+            <button id="checkout-btn" class="checkout-btn" type="button">
+              Checkout
+            </button>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="CSS/products.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

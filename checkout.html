@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Kasirku</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo">Kasirku.</a>
+      <div class="navbar-extra">
+        <a href="cart.html" aria-label="Kembali ke keranjang">
+          <i data-feather="arrow-left"></i>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="checkout-section">
+        <h1>Checkout</h1>
+        <div class="checkout-card">
+          <div class="checkout-card-header">
+            <h2>Ringkasan Pesanan</h2>
+            <i data-feather="check-circle"></i>
+          </div>
+
+          <!-- List Item Belanjaan -->
+          <div id="checkout-items" class="checkout-items"></div>
+
+          <!-- Rincian Jumlah & Perhitungan -->
+          <div class="checkout-summary-row">
+            <span>Total jumlah barang</span>
+            <strong id="checkout-total-quantity">0</strong>
+          </div>
+          <div class="checkout-summary-row">
+            <span>Subtotal</span>
+            <strong id="checkout-subtotal">Rp0</strong>
+          </div>
+          <div class="checkout-summary-row">
+            <span>Diskon</span>
+            <strong id="checkout-discount" style="color: #dc2626">Rp0</strong>
+          </div>
+          <div class="checkout-summary-row checkout-total">
+            <span>Total Pembayaran</span>
+            <strong id="checkout-total-price">Rp0</strong>
+          </div>
+
+          <button id="confirm-order-btn" class="checkout-btn" type="button">
+            Konfirmasi Pesanan
+          </button>
+          <div id="transaction-result" class="transaction-result" hidden></div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

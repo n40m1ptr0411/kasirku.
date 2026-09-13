@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasirku</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .poppins-bold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+    </style>
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- my style -->
+
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- buat nyambungin ke file css -->
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Kasirku.</a>
+      <div class="navbar-nav">
+        <div class="category-menu">
+          <a href="#electronic">Electronic</a>
+          <a href="#life-style">Life Style</a>
+          <a href="#home-supplies">Home Supplies</a>
+          <a href="#health">Health</a>
+        </div>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a
+          href="cart.html"
+          id="shopping-cart"
+          aria-label="Buka keranjang belanja"
+        >
+          <i data-feather="shopping-cart"></i>
+          <span id="cart-count">0</span>
+        </a>
+        <a
+          href="#"
+          id="hamburger-menu"
+          aria-label="Buka menu kategori"
+          aria-expanded="false"
+        >
+          <i data-feather="menu"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Welcome!</h1>
+        <p>Mudahkan hidupmu dan percepat transaksimu bersama Kasirku!</p>
+        <a href="#electronic" class="cta">Mulai Belanja</a>
+      </main>
+    </section>
+    <!-- hero section end -->
+
+    <!-- Category sections start -->
+    <section id="electronic" class="electronic">
+      <h2>Electronic</h2>
+      <div class="product-row"></div>
+    </section>
+
+    <section id="life-style" class="life-style">
+      <h2>Life Style</h2>
+      <div class="product-row"></div>
+    </section>
+
+    <section id="home-supplies" class="home-supplies">
+      <h2>Home Supplies</h2>
+      <div class="product-row"></div>
+    </section>
+
+    <section id="health" class="health">
+      <h2>Health</h2>
+      <div class="product-row"></div>
+    </section>
+    <!-- Category sections end -->
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="CSS/products.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
